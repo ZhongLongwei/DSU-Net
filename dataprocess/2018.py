@@ -7,10 +7,10 @@ import torch.nn.functional as F
 
 
 def resize2():
-    root = 'D:\FAT-NET\ISIC2018\ISIC2018_Task1-2_Training_Input\ISIC2018_Task1-2_Training_Input'
+    root = 'D:\ISIC2018\ISIC2018_Task1-2_Training_Input\ISIC2018_Task1-2_Training_Input'
     b1 = [i for i in os.listdir(os.path.join(root)) if i.endswith(".jpg")]
     b1.sort()
-    root1 = 'D:\FAT-NET\ISIC2018\ISIC2018_Task1_Training_GroundTruth\ISIC2018_Task1_Training_GroundTruth'
+    root1 = 'D:\ISIC2018\ISIC2018_Task1_Training_GroundTruth\ISIC2018_Task1_Training_GroundTruth'
     b2 = [i for i in os.listdir(os.path.join(root1)) if i.endswith(".png")]
     b2.sort()
     image_root = [os.path.join(root, i) for i in b1]
@@ -18,15 +18,15 @@ def resize2():
     rootest = 'D:\FAT-NET\ISIC2018\ISIC2018_Task1-2_Test_Input\ISIC2018_Task1-2_Test_Input'
     b3 = [i for i in os.listdir(os.path.join(rootest)) if i.endswith(".jpg")]
     b3.sort()
-    rootest1 = 'D:\FAT-NET\ISIC2018\ISIC2018_Task1_Test_GroundTruth\ISIC2018_Task1_Test_GroundTruth'
+    rootest1 = 'D:\ISIC2018\ISIC2018_Task1_Test_GroundTruth\ISIC2018_Task1_Test_GroundTruth'
     b4 = [i for i in os.listdir(os.path.join(rootest1)) if i.endswith(".png")]
     b4.sort()
     image_root1 = [os.path.join(rootest, i) for i in b3]
     label_root1 = [os.path.join(rootest1, i) for i in b4]
-    rootval = 'D:\FAT-NET\ISIC2018\ISIC2018_Task1-2_Validation_Input\ISIC2018_Task1-2_Validation_Input'
+    rootval = 'D:\ISIC2018\ISIC2018_Task1-2_Validation_Input\ISIC2018_Task1-2_Validation_Input'
     b5 = [i for i in os.listdir(os.path.join(rootval)) if i.endswith(".jpg")]
     b5.sort()
-    rootval1 = 'D:\FAT-NET\ISIC2018\ISIC2018_Task1_Validation_GroundTruth\ISIC2018_Task1_Validation_GroundTruth'
+    rootval1 = 'D:\ISIC2018\ISIC2018_Task1_Validation_GroundTruth\ISIC2018_Task1_Validation_GroundTruth'
     b6 = [i for i in os.listdir(os.path.join(rootval1)) if i.endswith(".png")]
     b6.sort()
     image_root2 = [os.path.join(rootval, i) for i in b5]
