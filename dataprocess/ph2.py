@@ -19,7 +19,7 @@ def set_seed(seed):
 
 def datachuli():
     set_seed(2024)
-    root = 'D:\FAT-NET\PH2\PH2Dataset\PH2Dataset\PH2 Dataset images'
+    root = 'D:\PH2\PH2Dataset\PH2Dataset\PH2 Dataset images'
     b1 = [i for i in os.listdir(os.path.join(root))]
     random.shuffle(b1)
     image_root = [os.path.join(root, i, f'{i}_Dermoscopic_Image', f'{i}.bmp') for i in b1]
