@@ -15,7 +15,7 @@ def resize2():
     b2.sort()
     image_root = [os.path.join(root, i) for i in b1]
     label_root = [os.path.join(root1, i) for i in b2]
-    rootest = 'D:\FAT-NET\ISIC2018\ISIC2018_Task1-2_Test_Input\ISIC2018_Task1-2_Test_Input'
+    rootest = 'D:\ISIC2018\ISIC2018_Task1-2_Test_Input\ISIC2018_Task1-2_Test_Input'
     b3 = [i for i in os.listdir(os.path.join(rootest)) if i.endswith(".jpg")]
     b3.sort()
     rootest1 = 'D:\ISIC2018\ISIC2018_Task1_Test_GroundTruth\ISIC2018_Task1_Test_GroundTruth'
